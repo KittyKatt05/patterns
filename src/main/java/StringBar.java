@@ -1,3 +1,4 @@
+import java.sql.Driver;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,4 +50,11 @@ public class StringBar extends Bar{
             if (isHappyHour()) observer.happyHourStarted(this);
             else observer.happyHourEnded(this);
     }
+
+    public void order(StringDrink drink, StringRecipe recipe){
+        recipe.mix(drink);
+
+    }
+
+
 }
